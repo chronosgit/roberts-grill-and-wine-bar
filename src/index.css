@@ -1,6 +1,6 @@
 html {
 	font-family: "Nunito", Arial, Helvetica, sans-serif;
-	color: var(--clr-main);
+	color: var(--clr-white);
 	overflow-x: hidden;
 }
 
@@ -22,9 +22,13 @@ html {
 	src: url("../public/fonts/Nunito-Bold.ttf");
 }
 
-:root {
-	--clr-main: var(--clr-white);
+@font-face {
+	font-family: "Cinzel";
+	font-weight: 400;
+	src: url("../public/fonts/Cinzel-Regular.ttf");
+}
 
+:root {
 	--clr-beige-400: hsl(28, 46%, 59%);
 	--clr-beige-700: hsl(32, 33%, 56%);
 	--clr-white: hsl(0, 0%, 100%);
@@ -35,10 +39,18 @@ body {
 	margin: 0;
 }
 
-* {
+*, *::before, *::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+*::-moz-selection {
+	background-color: var(--clr-beige-700);
+}
+
+*::selection {
+	background-color: var(--clr-beige-700);
 }
 
 img {
@@ -57,5 +69,7 @@ ul {
 }
 
 button {
+	background: none;
+	border: none;
 	cursor: pointer;
 }

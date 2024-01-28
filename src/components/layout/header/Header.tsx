@@ -1,6 +1,6 @@
-import Logo from "../../ui/logo/Logo";
 import getActiveHeaderLink from "../../../utils/getActiveHeaderLink";
 import styles from "./header.module.css";
+import Logo from "../../ui/logo/Logo";
 
 const Header = () => {
 

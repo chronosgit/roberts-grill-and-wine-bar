@@ -1,0 +1,48 @@
+.footer {
+    color: var(--clr-black);
+    background-image: url("/public/images/footer.avif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.contact {
+    padding: 8rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    border-block-end: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.contact_text {
+    margin-block: 1rem;
+    font-family: "Cinzel", "Times New Roman", Times, serif;
+}
+
+.links {
+    margin-block: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.link {
+    padding: 0.8rem;
+    background-color: var(--clr-white);
+    cursor: pointer;
+}
+
+.link > img {
+    --size: 1rem;
+    width: var(--size);
+    height: var(--size);
+}
+
+.link:hover > img {
+    filter: invert(62%) sepia(4%) saturate(3283%) hue-rotate(347deg) brightness(97%) contrast(103%);
+}
+
+.copyright {
+    padding: 3rem;
+    font-size: 0.9rem;
+}
