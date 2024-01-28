@@ -1,0 +1,30 @@
+.header {
+    position: absolute;
+    padding: 3rem 1rem;
+}
+
+.nav, .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    gap: 5rem;
+}
+
+.links {
+    gap: 2rem;
+}
+
+.link {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: var(--clr-beige-700);
+}

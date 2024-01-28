@@ -1,24 +1,25 @@
 html {
 	font-family: "Nunito", Arial, Helvetica, sans-serif;
-	overflow-x: none;
+	color: var(--clr-main);
+	overflow-x: hidden;
 }
 
 @font-face {
 	font-family: "Nunito";
 	font-weight: 200;
-	src: url("../../ecommerce-alcohol/public/fonts/Nunito-Light.ttf");
+	src: url("../public/fonts/Nunito-Light.ttf");
 }
 
 @font-face {
 	font-family: "Nunito";
 	font-weight: 400;
-	src: url("../../ecommerce-alcohol/public/fonts/Nunito-Regular.ttf");
+	src: url("../public/fonts/Nunito-Regular.ttf");
 }
 
 @font-face {
 	font-family: "Nunito";
 	font-weight: 700;
-	src: url("../../ecommerce-alcohol/public/fonts/Nunito-Bold.ttf");
+	src: url("../public/fonts/Nunito-Bold.ttf");
 }
 
 :root {
@@ -47,6 +48,14 @@ img {
 }
 
 a {
-	color: var(--clr-main);
+	color: inherit;
 	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
 }
