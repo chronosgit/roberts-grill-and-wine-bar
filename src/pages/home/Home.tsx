@@ -1,8 +1,11 @@
-import Hero from "./hero/Hero";
+import HomeHero from "./home-hero/HomeHero";
+import styles from "./home.module.css";
 
 const Home = () => {
     return (
-        <Hero />
+        <div className={styles.home}>
+            <HomeHero maxWidth="md" center />
+        </div>
     )
 }
 

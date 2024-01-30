@@ -2,7 +2,6 @@ import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import useToggleModal from "./hooks/useToggleModal";
 import Navbar from "./components/layout/navbar/Navbar";
-import Container from "./components/layout/container/Container";
 import Footer from "./components/layout/footer/Footer";
 import BlackLoadingScreen from "./components/layout/black-loading-screen/BlackLoadingScreen";
 const NavbarModal = lazy(() => import("./components/layout/navbar-modal/NavbarModal"));
@@ -17,9 +16,7 @@ const AppRouter = () => {
 
     return (
         <>
-            <Container maxWidth="md" position="relative" >
-                <Navbar isModalOpen={isModalOpen} toggleModal={toggleModal} />
-            </Container>
+            <Navbar isModalOpen={isModalOpen} toggleModal={toggleModal} maxWidth="md" />
 
             {
                 isModalOpen &&

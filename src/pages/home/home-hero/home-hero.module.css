@@ -1,0 +1,64 @@
+.hero {
+    padding-block: var(--page-top-offset) 10rem;
+    max-width: 100%;
+    font-family: "Cinzel", 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.date {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-block-end: 1rem;
+}
+
+.title {
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 5.5rem;
+    letter-spacing: 4px;
+}
+
+.line {
+    margin-inline: auto;
+    width: max-content;
+    height: 2px;
+    margin-block: 2rem 3rem;
+    background-color: var(--clr-white);
+}
+
+.button {
+    padding: 1.3rem 2rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--clr-white);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--clr-beige-700);
+    color: var(--clr-white);
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 5rem;
+    }
+
+    .button {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: normal;
+    }
+
+    .button {
+        padding: 1rem 1.5rem;
+    }
+}
