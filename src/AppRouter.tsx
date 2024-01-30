@@ -16,7 +16,7 @@ const AppRouter = () => {
 
     return (
         <>
-            <Navbar isModalOpen={isModalOpen} toggleModal={toggleModal} maxWidth="md" />
+            <Navbar isModalOpen={isModalOpen} toggleModal={toggleModal} />
 
             {
                 isModalOpen &&

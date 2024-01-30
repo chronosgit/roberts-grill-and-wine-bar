@@ -1,0 +1,30 @@
+.button {
+    padding: 1.3rem 2rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--clr-white);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--clr-beige-700);
+    color: var(--clr-white);
+}
+
+.button_hover_black:hover {
+    background-color: var(--clr-black);
+}
+
+@media screen and (max-width: 1024px) {
+    .button {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+        padding: 1rem 1.5rem;
+    }
+}

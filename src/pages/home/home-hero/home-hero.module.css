@@ -1,8 +1,17 @@
 .hero {
     padding-block: var(--page-top-offset) 10rem;
-    max-width: 100%;
+    padding-inline: var(--padding-sides);
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../../../public/images/home/home-hero-bg.avif");
+        background-attachment: fixed;
     font-family: "Cinzel", 'Times New Roman', Times, serif;
     text-align: center;
+}
+
+.container {
+    max-width: var(--md);
+    margin-inline: auto;
 }
 
 .date {
@@ -26,28 +35,9 @@
     background-color: var(--clr-white);
 }
 
-.button {
-    padding: 1.3rem 2rem;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background-color: var(--clr-white);
-    transition: all 0.3s ease;
-}
-
-.button:hover {
-    background-color: var(--clr-beige-700);
-    color: var(--clr-white);
-}
-
 @media screen and (max-width: 1024px) {
     .title {
         font-size: 5rem;
-    }
-
-    .button {
-        padding: 1rem 1.5rem;
     }
 }
 
@@ -56,9 +46,5 @@
         font-size: 3rem;
         line-height: 3rem;
         letter-spacing: normal;
-    }
-
-    .button {
-        padding: 1rem 1.5rem;
     }
 }

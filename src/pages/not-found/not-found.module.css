@@ -1,0 +1,22 @@
+.page {
+    margin-inline: auto;
+    padding-block-start: var(--page-top-offset);
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../../../public/images/404/404-bg.jpg");
+}
+
+.container {
+    max-width: var(--md);
+    margin-inline: auto;
+    text-align: center;
+}
+
+.message {
+    margin-block-end: 2rem;
+}
+
+.img {
+    margin-inline: auto;
+}

@@ -1,7 +1,6 @@
 import { FC, MouseEventHandler } from "react";
 import NavbarLinkList from "./navbar-link-list/NavbarLinkList";
 import navLinks from "../../../db/navLinks";
-import getWidthFromPrefix from "../../../utils/getWidthFromPrefix";
 import styles from "./navbar.module.css";
 import Logo from "../../ui/logo/Logo";
 import Burger from "../../ui/burger/Burger";
@@ -9,20 +8,15 @@ import Burger from "../../ui/burger/Burger";
 interface Props {
     isModalOpen: boolean,
     toggleModal: MouseEventHandler<HTMLButtonElement>,
-    maxWidth?: string,
 }
 
-const Navbar: FC<Props> = ({isModalOpen, toggleModal, maxWidth = ""}) => {
+const Navbar: FC<Props> = ({isModalOpen, toggleModal}) => {
 
     const linksFirstHalf = navLinks.slice(0, Math.floor(navLinks.length / 2));
     const linksSecondHalf = navLinks.slice(Math.floor(navLinks.length / 2));
 
-    const additionalStyles = {
-        maxWidth: getWidthFromPrefix(maxWidth),
-    }
-
     return (
-        <nav className={styles.nav} style={additionalStyles}>
+        <nav className={styles.nav}>
             <NavbarLinkList links={linksFirstHalf} />
 
             <Logo />
@@ -30,10 +24,7 @@ const Navbar: FC<Props> = ({isModalOpen, toggleModal, maxWidth = ""}) => {
             <NavbarLinkList links={linksSecondHalf} />
             
             {
-                isModalOpen
-                ?
-                    <></>
-                :
+                !isModalOpen &&
                     <Burger onClick={toggleModal} />
             }
         </nav>

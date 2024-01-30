@@ -1,5 +1,5 @@
 html {
-	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	font-family: var(--ff-nunito);
 	color: var(--clr-white);
 	overflow-x: hidden;
 }
@@ -34,7 +34,16 @@ html {
 	--clr-white: hsl(0, 0%, 100%);
 	--clr-black: hsl(0, 0%, 0%);
 
+	--ff-nunito: "Nunito", Arial, Helvetica, sans-serif;
+	--ff-cinzel: "Cinzel", "Times New Roman", Times, serif;
+
 	--page-top-offset: 20rem;
+	--padding-sides: 1.5rem;
+
+	--sm: 33.75rem;
+	--md: 45rem;
+	--lg: 60rem;
+	--xl: 71.25rem;
 }
 
 body {
@@ -48,10 +57,12 @@ body {
 }
 
 *::-moz-selection {
+	color: var(--clr-black);
 	background-color: var(--clr-beige-700);
 }
 
 *::selection {
+	color: var(--clr-black);
 	background-color: var(--clr-beige-700);
 }
 
