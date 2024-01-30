@@ -1,0 +1,16 @@
+.nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+@media screen and (max-width: 920px) {
+    .nav {
+        flex-direction: column;
+    }
+}

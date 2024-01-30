@@ -1,6 +1,6 @@
 import getCurrentUrl from "./getCurrentUrl";
 
-const getActiveHeaderLink = (): string => {
+const getActiveNavbarLink = (): string => {
     const urlRegex: RegExp = /^https?:\/\/[^/]+(\/[^?]*)?/;
     const currentUrl: string = getCurrentUrl();
 
@@ -14,4 +14,4 @@ const getActiveHeaderLink = (): string => {
     return activeHeaderLinkName.slice(1); // without slash in the beginning
 }
 
-export default getActiveHeaderLink;
+export default getActiveNavbarLink;

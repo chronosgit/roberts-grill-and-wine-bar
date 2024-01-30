@@ -1,0 +1,22 @@
+.list {
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.list > li {
+    width: 100%;
+    padding-block: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.list > li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.list > li > a {
+    font-size: 0.8rem;
+}

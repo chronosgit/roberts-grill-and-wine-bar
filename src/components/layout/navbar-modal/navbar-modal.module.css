@@ -1,0 +1,17 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--clr-black);
+}
+
+.closeBtn {
+    --size: 2rem;
+    position: absolute;
+    right: 0;
+    width: var(--size);
+    height: var(--size);
+    transform: translate(-0.5rem, 0.5rem);
+}
