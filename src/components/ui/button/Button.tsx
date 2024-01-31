@@ -8,6 +8,9 @@ interface Props {
     textColor?: string,
     hoverBgColor?: string,
     hoverTextColor?: string,
+    borderWidth?: string,
+    borderStyle?: string,
+    borderColor?: string,
 }
 
 const Button: FC<Props> = ({
@@ -15,7 +18,10 @@ const Button: FC<Props> = ({
     textColor = "var(--clr-black)",
     backgroundColor = "var(--clr-white)",
     hoverBgColor = "var(--clr-white)",
-    hoverTextColor = "var(--clr-black)"
+    hoverTextColor = "var(--clr-black)",
+    borderWidth = "0",
+    borderStyle,
+    borderColor,
 }) => {
 
     const [isHover, toggleHover] = useHover();
@@ -23,6 +29,9 @@ const Button: FC<Props> = ({
     const additionalStyles: object = {
         color: isHover ? hoverTextColor : textColor,
         backgroundColor: isHover ? hoverBgColor : backgroundColor,
+        borderWidth: borderWidth,
+        borderStyle: borderStyle,
+        borderColor: borderColor,
     }
 
     return (

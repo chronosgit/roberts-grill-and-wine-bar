@@ -1,0 +1,30 @@
+.section {
+    min-height: 130vh;
+    padding-block-start: 10rem;
+    font-family: var(--ff-cinzel);
+    color: var(--clr-black);
+    text-align: center;
+    background-image: 
+        radial-gradient(
+            at center center, 
+            #f8f1e3 -20%,
+            #ffffff 100%
+        );
+    /**/
+}
+
+.container {
+    max-width: var(--xxl);
+    margin-inline: auto;
+}
+
+.header {
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+}
+
+.message {
+    margin-block-start: 3rem;
+    font-size: 1.5rem;
+}

@@ -1,6 +1,7 @@
 import HomeHero from "./home-hero/HomeHero";
 import History from "../../components/layout/history/History";
 import HomeMenus from "./home-menus/HomeMenus";
+import HomeDiscover from "./home-discover/HomeDiscover";
 import styles from "./home.module.css";
 
 const Home = () => {
@@ -31,6 +32,8 @@ const Home = () => {
             <History data={homeHistoryData} />
             
             <HomeMenus />
+
+            <HomeDiscover />
         </div>
     )
 }
