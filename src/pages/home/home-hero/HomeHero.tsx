@@ -1,4 +1,4 @@
-import ButtonWhite from "../../../components/ui/button-white/ButtonWhite";
+import Button from "../../../components/ui/button/Button";
 import styles from "./home-hero.module.css";
 
 const HomeHero = () => {
@@ -12,7 +12,13 @@ const HomeHero = () => {
 
                 <div className={styles.line} />
 
-                <ButtonWhite text="Book a table" />
+                <Button 
+                    text="Book a table"
+                    textColor="var(--clr-black)" 
+                    backgroundColor="var(--clr-white)"
+                    hoverTextColor="var(--clr-white)"
+                    hoverBgColor="var(--clr-beige-700)"
+                />
             </div>
         </section>
     )

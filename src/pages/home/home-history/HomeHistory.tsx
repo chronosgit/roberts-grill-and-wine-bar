@@ -1,4 +1,5 @@
-import ButtonWhite from "../../../components/ui/button-white/ButtonWhite";
+import Button from "../../../components/ui/button/Button";
+import Line from "../../../components/ui/line/Line";
 import styles from "./home-history.module.css";
 
 const HomeHistory = () => {
@@ -10,7 +11,13 @@ const HomeHistory = () => {
 
                 <p className={styles.date}>175 Years Of Service</p>
 
-                <div className={styles.line} />
+                <Line
+                    width="3.5rem"
+                    height="2px"
+                    color="var(--clr-white"
+                    center
+                    marginBlock="2.5rem"
+                />
 
                 <p className={styles.text_intro}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -24,7 +31,13 @@ const HomeHistory = () => {
                     adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.
                 </p>
 
-                <ButtonWhite text="More about us" hoverBlackBg />
+                <Button 
+                    text="More About Us"
+                    textColor="var(--clr-black)" 
+                    backgroundColor="var(--clr-white)"
+                    hoverTextColor="var(--clr-white)"
+                    hoverBgColor="var(--clr-black)"
+                />
             </div>
         </section>
     )
