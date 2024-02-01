@@ -7,6 +7,7 @@ const wines: IWineItem[] = [
             Sauvignon Blanc, James Thompson, 75cl`,
         price: "29$",
         imageUrl: "../../public/images/wines/bottle-1.png",
+        special: true,
     },
     {
         title: 
@@ -14,6 +15,7 @@ const wines: IWineItem[] = [
             Sauvignon Blanc, James Thompson, 75cl`,
         price: "29$",
         imageUrl: "../../public/images/wines/bottle-2.png",
+        special: true,
     },
     {
         title: 
@@ -21,6 +23,7 @@ const wines: IWineItem[] = [
             Sauvignon Blanc, James Thompson, 75cl`,
         price: "29$",
         imageUrl: "../../public/images/wines/bottle-3.png",
+        special: true,
     },
     {
         title: 
@@ -28,6 +31,7 @@ const wines: IWineItem[] = [
             Sauvignon Blanc, James Thompson, 75cl`,
         price: "29$",
         imageUrl: "../../public/images/wines/bottle-4.png",
+        special: true,
     },
 ];
 
