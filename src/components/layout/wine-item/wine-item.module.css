@@ -1,0 +1,24 @@
+.item {
+    padding-block-start: 2.5rem;
+    padding-block-end: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: var(--clr-white);
+}
+
+.image {
+    margin-inline: auto;
+    margin-block-end: 0.5rem;
+}
+
+.title {
+    padding-inline: 3rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: var(--clr-beige-400);
+}

@@ -8,7 +8,7 @@ import styles from "./home-discover.module.css";
 const HomeDiscover = () => {
 
     const specialWines = useMemo(getSpecialWines, []);
-    const fewSpecialWines = specialWines.slice(3);
+    const fewSpecialWines = specialWines.slice(0, 4);
 
     return (
         <section className={styles.section}>
@@ -18,7 +18,7 @@ const HomeDiscover = () => {
                     height="1px"
                     color="var(--clr-beige-400)"
                     center
-                    marginBlockEnd="2rem"
+                    marginBlockEnd="2.5rem"
                 />
 
                 <h2 className={styles.header}>Discover <br />Special Wines</h2>
@@ -27,7 +27,9 @@ const HomeDiscover = () => {
                     fewSpecialWines.length > 0 
                     ?
                     <>
-                        <WineItems wineItems={fewSpecialWines} />
+                        <div className={styles.items_wrapper}>
+                            <WineItems wineItems={fewSpecialWines} />
+                        </div>
 
                         <Button 
                             text="All Special Wines"
