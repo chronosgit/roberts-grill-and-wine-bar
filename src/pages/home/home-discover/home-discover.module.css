@@ -1,6 +1,7 @@
 .section {
     min-height: 130vh;
-    padding-block-start: 10rem;
+    padding-block: 10rem 5rem;
+    padding-inline: 0.3rem;
     font-family: var(--ff-cinzel);
     color: var(--clr-black);
     text-align: center;
@@ -31,4 +32,31 @@
 
 .items_wrapper {
     margin-block: 4rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .section {
+        min-height: 110vh;
+        padding-block-start: 6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 3.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section {
+        min-height: 110vh;
+        padding-block-start: 6rem;
+        padding-block-end: 1.5rem;
+    }
+
+    .header {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
 }

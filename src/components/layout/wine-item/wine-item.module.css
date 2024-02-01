@@ -6,6 +6,7 @@
 }
 
 .item:hover {
+    border-radius: 0.5rem;
     background-color: var(--clr-white);
 }
 
@@ -21,4 +22,46 @@
 .price {
     font-size: 1.2rem;
     color: var(--clr-beige-400);
+}
+
+@media screen and (max-width: 1024px) {
+    .item {
+        padding-block: 1.5rem;
+    }
+
+    .title {
+        padding-inline: 0.5rem;
+    }
+
+    .image {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        padding-inline: 0.5rem;
+    }
+
+    .image {
+        max-width: 70%;
+    }
+
+    .title {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        padding-inline: 0.5rem;
+    }
+
+    .image {
+        max-width: 25%;
+    }
 }

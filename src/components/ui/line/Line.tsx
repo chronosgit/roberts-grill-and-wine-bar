@@ -1,4 +1,5 @@
 import { FC } from "react";
+import ILineStyles from "../../../interfaces/ILineStyles";
 
 interface Props {
     width: string,
@@ -14,17 +15,17 @@ const Line: FC<Props> = ({
     height, 
     color, 
     center = false, 
-    marginBlock = "0",
-    marginBlockEnd = "0",
+    marginBlock,
+    marginBlockEnd,
 }) => {
 
-    const styles: object = {
+    const styles: ILineStyles = {
         width: width,
         height: height,
         backgroundColor: color,
-        marginInline: center && "auto",
-        marginBlockEnd: marginBlockEnd, 
-        marginBlock: marginBlock, 
+        marginInline: center ? "auto" : "none",
+        marginBlock:  marginBlock, 
+        marginBlockEnd: marginBlock ? marginBlock : marginBlockEnd, // dealing with overrides
     }
 
     return (
