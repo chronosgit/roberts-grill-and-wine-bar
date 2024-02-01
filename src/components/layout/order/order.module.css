@@ -1,0 +1,45 @@
+.section {
+    min-height: 110vh;
+    background-color: hsl(40, 60%, 93%);
+    font-family: var(--ff-cinzel);
+    color: var(--clr-black);
+    text-align: center;
+}
+
+.container {
+    max-width: var(--xl);
+    margin-inline: auto;
+}
+
+.header {
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+}
+
+.message {
+    margin-block-start: 3rem;
+    font-size: 1.5rem;
+}
+
+.items_wrapper {
+    margin-block: 4rem;
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 3.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+}

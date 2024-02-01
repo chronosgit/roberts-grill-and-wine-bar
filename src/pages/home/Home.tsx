@@ -3,6 +3,7 @@ import History from "../../components/layout/history/History";
 import HomeMenus from "./home-menus/HomeMenus";
 import HomeDiscover from "./home-discover/HomeDiscover";
 import styles from "./home.module.css";
+import Order from "../../components/layout/order/Order";
 
 const Home = () => {
 
@@ -34,6 +35,8 @@ const Home = () => {
             <HomeMenus />
 
             <HomeDiscover />
+
+            <Order />
         </div>
     )
 }

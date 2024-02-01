@@ -11,7 +11,7 @@ const WineItem: FC<Props> = ({wineItem}) => {
 
     const redirectToWinePage = () => {
         alert("Redirect is working fine, the page just doesn't exist");
-        window.location.href=`/wines/${wineItem.id}`;
+        // window.location.href=`/wines/${wineItem.id}`;
     }
 
     const onKeyDown: KeyboardEventHandler<HTMLDivElement> = (e): void => {
