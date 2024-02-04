@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import IOrderItem from "../../../../interfaces/IOrderItems";
+import IOrderItem from "../../../../interfaces/IOrderItem";
 import styles from "./order-item.module.css";
 
 type Props = {

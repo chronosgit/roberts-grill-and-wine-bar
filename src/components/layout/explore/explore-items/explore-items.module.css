@@ -1,0 +1,27 @@
+.items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .items > * {
+        display: none;
+    }
+      
+      /* Show only the items in the first row */
+    .items > *:nth-child(-n+3) {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .items {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,53 @@
+.section {
+    padding-block: 7rem 2rem;
+    padding-inline: 1rem;
+    font-family: var(--ff-cinzel);
+    background-color: hsl(40, 60%, 93%);
+    text-align: center;
+}
+
+.container {
+    max-width: var(--md);
+    margin-inline: auto;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    color: var(--clr-black);
+    letter-spacing: 2px;
+    margin-block-end: 2rem;
+}
+
+.descr {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: var(--clr-beige-400);
+    margin-block-end: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 3.3rem;
+        line-height: 2.5rem;
+        letter-spacing: normal;
+        margin-block-end: 0.5rem;
+    }
+
+    .descr {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-block-end: 1.5rem;
+    }
+
+    .descr {
+        font-size: 1.4rem;
+    }
+}

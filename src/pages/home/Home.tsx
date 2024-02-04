@@ -5,6 +5,7 @@ import HomeDiscover from "./home-discover/HomeDiscover";
 import Order from "../../components/layout/order/Order";
 import PhotoGallery from "../../components/layout/photo-gallery/PhotoGallery";
 import styles from "./home.module.css";
+import Explore from "../../components/layout/explore/Explore";
 
 const Home = () => {
 
@@ -40,6 +41,8 @@ const Home = () => {
             <Order />
 
             <PhotoGallery />
+
+            <Explore />
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import IOrderItem from "../interfaces/IOrderItems"
+import IOrderItem from "../interfaces/IOrderItem"
 
 const orderWines: IOrderItem[] = [
     {

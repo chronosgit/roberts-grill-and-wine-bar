@@ -1,5 +1,5 @@
 import OrderItem from "../order-item/OrderItem";
-import IOrderItem from "../../../../interfaces/IOrderItems";
+import IOrderItem from "../../../../interfaces/IOrderItem";
 import styles from "./order-items.module.css";
 
 type Props = {

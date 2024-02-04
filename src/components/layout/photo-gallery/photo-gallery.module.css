@@ -6,6 +6,7 @@
     ;
     grid-auto-columns: 1fr;
     font-family: var(--ff-cinzel);
+    background-color: hsl(40, 60%, 93%);
 }
 
 .gallery > img {
