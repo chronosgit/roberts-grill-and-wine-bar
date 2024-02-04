@@ -1,5 +1,6 @@
 .section {
-    min-height: 110vh;
+    padding-block: 8rem 6rem;
+    padding-inline: 1rem;
     background-color: hsl(40, 60%, 93%);
     font-family: var(--ff-cinzel);
     color: var(--clr-black);
@@ -12,6 +13,7 @@
 }
 
 .header {
+    margin-block-end: 3rem;
     font-size: 4.5rem;
     font-weight: 400;
     line-height: 3.5rem;
@@ -22,12 +24,10 @@
     font-size: 1.5rem;
 }
 
-.items_wrapper {
-    margin-block: 4rem;
-}
-
 @media screen and (max-width: 1024px) {
-    
+    .section {
+        padding-block: 5rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -38,6 +38,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .section {
+        padding: 3rem;
+    }
+
     .header {
         font-size: 2.5rem;
         line-height: 2rem;

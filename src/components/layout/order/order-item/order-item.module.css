@@ -1,0 +1,117 @@
+.item {
+    margin-inline: auto;
+    font-family: var(--ff-nunito);
+    border-block-end: 1px solid rgba(0, 0, 0, 0.158);
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+.content {
+    padding: 2rem 2.5rem;
+    text-align: left;
+}
+
+.first_row {
+    margin-block-end: 0.5rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    font-family: var(--ff-cinzel);
+}
+
+.title {
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.price,
+.link {
+    color: var(--clr-beige-700);
+}
+
+.price {
+    font-size: 1.3rem;
+}
+
+.descr {
+    margin-block-end: 2rem;
+    font-size: 1.1rem;
+    color: var(--clr-gray);
+}
+
+.link {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}   
+
+.link:hover {
+    color: var(--clr-black);
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        padding: 2rem 0.5rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .descr {
+        font-size: 1rem;
+    }
+
+    .link {
+        font-size: 0.8rem;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1.1rem;
+    }
+
+    .descr {
+        font-size: 0.9rem;
+    }
+
+    .link {
+        font-size: 0.7rem;
+    }   
+}
+
+@media screen and (max-width: 480px) {
+    .item {
+        border: none;
+    }
+
+    .content {
+        padding-inline: 0;
+    }
+
+    .first_row {
+        justify-content: space-between;
+    }
+
+    .descr {
+        margin-block-end: 1rem;
+    }
+}

@@ -2,8 +2,9 @@ import HomeHero from "./home-hero/HomeHero";
 import History from "../../components/layout/history/History";
 import HomeMenus from "./home-menus/HomeMenus";
 import HomeDiscover from "./home-discover/HomeDiscover";
-import styles from "./home.module.css";
 import Order from "../../components/layout/order/Order";
+import PhotoGallery from "../../components/layout/photo-gallery/PhotoGallery";
+import styles from "./home.module.css";
 
 const Home = () => {
 
@@ -37,6 +38,8 @@ const Home = () => {
             <HomeDiscover />
 
             <Order />
+
+            <PhotoGallery />
         </div>
     )
 }

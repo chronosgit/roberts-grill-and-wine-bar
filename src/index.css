@@ -32,6 +32,7 @@ html {
 	--clr-beige-400: hsl(28, 46%, 59%);
 	--clr-beige-700: hsl(32, 33%, 56%);
 	--clr-white: hsl(0, 0%, 100%);
+	--clr-gray: hsl(0, 0%, 40%);
 	--clr-black: hsl(0, 0%, 0%);
 
 	--ff-nunito: "Nunito", Arial, Helvetica, sans-serif;

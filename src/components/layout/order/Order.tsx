@@ -1,7 +1,11 @@
 import Line from "../../ui/line/Line";
+import OrderItems from "./order-items/OrderItems";
+import orderWines from "../../../db/orderWines";
 import styles from "./order.module.css";
 
 const Order = () => {
+
+    const orderWinesToShow = orderWines.slice(0, 3);
 
     return (
         <section className={styles.section}>
@@ -14,7 +18,20 @@ const Order = () => {
                     marginBlockEnd="2.5rem"
                 />
 
-                <h2 className={styles.header}>Discover <br />Special Wines</h2>
+                <h2 className={styles.header}>
+                    Order Wine At<br/>Your Doorstep
+                </h2>
+
+                {
+                    orderWinesToShow.length > 0
+                    ?
+                        <OrderItems items={orderWinesToShow} />
+                    :
+                        <p className={styles.message}>
+                            Oops... Our wine got sold really quick! 
+                            Waiting for new supplies...
+                        </p>
+                }
             </div>
         </section>
     )

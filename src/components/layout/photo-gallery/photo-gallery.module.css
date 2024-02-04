@@ -1,0 +1,128 @@
+.gallery {
+    display: grid;
+    grid-template-areas: 
+        'first first main second'
+        'third third fourth fifth'
+    ;
+    grid-auto-columns: 1fr;
+    font-family: var(--ff-cinzel);
+}
+
+.gallery > img {
+    filter: brightness(70%);
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.gallery > img:hover {
+    filter: none;
+}
+
+.main {
+    --main-bg: hsl(32, 33%, 55%);
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    background-color: var(--main-bg);
+}
+
+.title {
+    font-size: 4rem;
+    line-height: 3.5rem;
+}
+
+.btn {
+    --size: 3.5rem;
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    border: 2px solid var(--clr-white);
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.000, 1.120, 0.625, 0.960);;
+}
+
+.btn > svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: var(--clr-white);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: var(--clr-white);
+} 
+
+.btn:hover > svg {
+    fill: var(--main-bg);
+}
+
+.first {
+    grid-area: first;
+}
+
+.second {
+    grid-area: second;
+}
+
+.third {
+    grid-area: third;
+}
+
+.fourth {
+    grid-area: fourth;
+}
+
+.fifth {
+    grid-area: fifth;
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery {
+        grid-template-areas: 
+            'first first'
+            'main second'
+            'third third'
+        ;
+    }
+
+    .main {
+        padding-inline: 1rem;
+    }
+
+    .fourth {
+        display: none;
+    }
+
+    .fifth {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery {
+        grid-template-areas: 
+            'first'
+            'main'
+            'third'
+        ;
+    }
+
+    .main {
+        padding-block: 3.5rem;
+        gap: 0.5rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .second {
+        display: none;
+    }
+}
